@@ -193,7 +193,7 @@ private:
 
 int main() {
   // Specify the name of your main tex file here.
-  bibSort bs("3dCFTdataPhiSix8.tex");
+  bibSort bs("name.tex");
   bs.composeBibliography();
   bs.sortBibliography();
   /*
