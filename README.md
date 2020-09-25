@@ -8,11 +8,11 @@ To use the program please input the name of the main .tex file (which contains t
 
 bibSort bs("name.tex");
 
-located in line 196.
+located on line 196.
 
 Place the .tex file into the same directory as the bibSort.cpp
 
-Complie, e.g.
+Compile, e.g.
 
 g++ -std=c++17 -o bibSort bibSort.cpp
 
@@ -22,4 +22,4 @@ Execute:
 
 Your references will be available as an output in the console. Please copy them and paste them into the .tex file as your bibliography list.
 
-I will work on a more user friendly interface if the conditions of a sufficient demand on the part of users and sufficient time on my part are both met.
+I will work on a more user-friendly interface if the conditions of a sufficient demand on the part of users and sufficient time on my part are both met.
