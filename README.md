@@ -22,4 +22,8 @@ Execute:
 
 Your references will be available as an output in the console. Please copy them and paste them into the .tex file as your bibliography list.
 
+The output will ignore references included in the original bibliography but not cited in the main text.
+
+Please ensure that the references in the text are separated with a comma, not a dash.
+
 I will work on a more user-friendly interface if the conditions of a sufficient demand on the part of users and sufficient time on my part are both met.
