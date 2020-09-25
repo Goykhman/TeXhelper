@@ -71,7 +71,8 @@ public:
       ++i;
     }
     int j = 0;
-    while (i+j < currentString.size() && currentString[i+j] != ',' && currentString[i+j] != '-' && currentString[i+j] != '}') {
+    // Does not look for references separated with '-' because some reference names might include '-'.
+    while (i+j < currentString.size() && currentString[i+j] != ',' && currentString[i+j] != '}') {
       ++j;
     }
     if (i+j < currentString.size() && currentString[i+j] == '}') {
@@ -102,7 +103,7 @@ public:
       if (isReferencing) {
         while (isReferencing) {
           int j = finishReferencing(i);
-          i += j;
+          i += (j+1);
         }
       }
       bool reference = true;
@@ -203,5 +204,7 @@ int main() {
   for (string s : sb) {
     cout << s << endl;
   }
+  cout << "Your total number of references is " << sb.size() << endl;
+  cout << "Please remember that the output does not include references which were present in the bibliography but not cited in the text."
   return 0;
 }
