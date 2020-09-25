@@ -205,6 +205,6 @@ int main() {
     cout << s << endl;
   }
   cout << "Your total number of references is " << sb.size() << endl;
-  cout << "Please remember that the output does not include references which were present in the bibliography but not cited in the text."
+  cout << "Please remember that the output does not include references which were present in the bibliography but not cited in the text" << endl;
   return 0;
 }
